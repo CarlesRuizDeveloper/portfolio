@@ -1,13 +1,13 @@
-import { Header } from "./components/Header";
-
-
+import Header from "./components/Header"
+import ContactInfoCard from "./components/ContactInfoCard"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      
-    </>
+    <main className="px4 pt-6">
+      <Header />
+      <ContactInfoCard />
+
+    </main>
   )
 }
 
