@@ -9,8 +9,9 @@ const ContactInfoCard = () => {
   return (
 <section>
   
-    <div className="flex justify-center items-center bg-blue-800 "> 
-      <div className='mt-10  '>
+    <div className="flex justify-center items-center"> 
+      <div className="bg-[url('../src/assets/img/backgroundProfile.jpg')] bg-cover bg-center ">
+        <div className='mt-[5%] ml-[10%] '>
           <div className='w-[20%] ml-[40%] mb-[-10%] md:ml-[35%] rounded-full overflow-visible'>
             <img className='rounded-full border-4 border-green-500 '  src={ProfileImage} alt='Carles Ruiz Montejo photo' />
           </div>  
@@ -41,7 +42,8 @@ const ContactInfoCard = () => {
                 link="https://www.example.com"
               />
             </div>
-          </div>        
+          </div>
+        </div>        
       </div>
     </div>
 </section>

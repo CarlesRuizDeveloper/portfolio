@@ -1,13 +1,14 @@
 import React from "react";
+import ButtonsBar from "./ButtonsBar";
 
 const ReactiveScreen = () => {
     return (
-    <>
-    <div className=" bg-green-500">
-        holaaa
+
+    <div className="mt-[3%] mb-[3%]">
+        <ButtonsBar />
     </div>
-        
-    </>
+
+    
     )
   }
   
