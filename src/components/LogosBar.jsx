@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogosBar = () => {
   return (
-    <div className='mb-2'>
+    <div >
       Aquí van los logos de frameworks pasando...
     </div>
   )

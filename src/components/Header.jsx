@@ -4,9 +4,9 @@ import Navbar from './Navbar';
 
 function Header() {
   return (
-    <header className='bg-orange-200  items-center'>
+    <header className='bg-orange-200  items-center m-0'>
         <LogosBar />
-        <Navbar />
+        {/* <Navbar /> */}
       
     </header>
   )
