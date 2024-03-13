@@ -10,5 +10,8 @@ export default defineConfig({
       // Mapea el prefijo `@img` a la carpeta de imágenes
       '@img': '/src/assets/img'
     }
-  }
+  },
+  
+ 
 });
+

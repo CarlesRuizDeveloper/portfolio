@@ -10,13 +10,13 @@ const ContactInfoCard = () => {
 <section>
   
     <div className="flex justify-center items-center"> 
-      <div className="bg-[url('../src/assets/img/backgroundProfile.jpg')] bg-cover bg-center ">
+      <div className="">
         <div className='mt-[5%] ml-[10%] '>
           <div className=' w-[20%] ml-[35%] mb-[-10%] md:ml-[35%] rounded-full overflow-visible'>
             <img className='rounded-full border-4 border-green-500 '  src={ProfileImage} alt='Carles Ruiz Montejo photo' />
           </div>  
 
-          <div className="w-[50%] md:w-[50%] ml-[19.7%] mt-0 mb-20 p-[2%] border-4 border-green-500 bg-white rounded-xl bg-gradient-to-r from-purple-500 to-pink-300 shadow-md">             
+          <div className="w-[50%] md:w-[50%] ml-[19.7%] mt-0 mb-20 p-[2%] border-4 border-green-500 bg-white rounded-xl  shadow-md">             
             <h1 className='text-center mt-[15%] text-[125%] sm:text-[145%] md:text-[155%] font-bold'>Carles Ruiz Montejo</h1>
             <h2 className='text-[115%] sm:text-[120%] text-center'>Software developer</h2>
             <h2 className='mt-[10%]  text-center text-[90%] sm:text-[100%]'>carlesruizm@gmail.com</h2>

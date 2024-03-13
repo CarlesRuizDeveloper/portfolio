@@ -1,30 +1,26 @@
 import React, { useState } from 'react';
 import Button from './Button';
-import HomeContent from './HomeContent';
+import AboutMeContent from './AboutMeContent';
 
 // Componentes de contenido
 
-const AboutMeContent = () => <div>Contenido 2</div>;
+
 const ProjectsContent = () => <div>Contenido 3</div>;
 const TeamworkVideosContent = () => <div>Contenido 4</div>;
 const NewsBlogContent = () => <div>Contenido 5</div>;
 
 const ButtonsBar = () => {
-  const [selectedButton, setSelectedButton] = useState('Home');
-  const [currentContent, setCurrentContent] = useState('Contenido 1');
+  const [selectedButton, setSelectedButton] = useState('About me');
+  const [currentContent, setCurrentContent] = useState('AboutMeContent');
 
   const handleButtonClick = (newContent, buttonLabel) => {
     setSelectedButton(buttonLabel);
     setCurrentContent(newContent);
   };
 
-  // Renderizar el contenido según el estado actual
   let contentComponent;
   switch (currentContent) {
-    case 'Contenido 1':
-      contentComponent = <HomeContent />;
-      break;
-    case 'Contenido 2':
+    case 'AboutMeContent':
       contentComponent = <AboutMeContent />;
       break;
     case 'Contenido 3':
@@ -43,33 +39,36 @@ const ButtonsBar = () => {
 
   return (
     <div>
-      <div className='mb-[3%]'>
-        <Button
-          label="Home"
-          onClick={() => handleButtonClick('Contenido 1', 'Home')}
-          isSelected={selectedButton === 'Home'}
-        />
-        <Button
-          label="About me"
-          onClick={() => handleButtonClick('Contenido 2', 'About me')}
-          isSelected={selectedButton === 'About me'}
-        />
-                <Button
-          label="Projects"
-          onClick={() => handleButtonClick('Contenido 3', 'Projects')}
-          isSelected={selectedButton === 'Projects'}
-        />
-                <Button
-          label="Teamwork videos"
-          onClick={() => handleButtonClick('Contenido 4', 'Teamwork videos')}
-          isSelected={selectedButton === 'Teamwork videos'}
-        />
-                <Button
-          label="News & blog"
-          onClick={() => handleButtonClick('Contenido 5', 'News & blog')}
-          isSelected={selectedButton === 'News & blog'}
-        />
+      <div className='inline-flex justify-center mb-[3%] ml-[8%]'>
 
+        <div className="ml-[1%] ">
+          <Button
+            label="About me"
+            onClick={() => handleButtonClick('AboutMeContent', 'About me')}
+            isSelected={selectedButton === 'About me'}
+          />
+        </div>
+        <div className="ml-[1%]">
+          <Button
+            label="My projects"
+            onClick={() => handleButtonClick('Contenido 3', 'Projects')}
+            isSelected={selectedButton === 'Projects'}
+          />
+        </div>
+        <div className="ml-[1%]">
+          <Button
+            label="Teamwork videos"
+            onClick={() => handleButtonClick('Contenido 4', 'Teamwork videos')}
+            isSelected={selectedButton === 'Teamwork videos'}
+          />
+        </div>
+        <div className="ml-[1%]">
+          <Button
+            label="News & blog"
+            onClick={() => handleButtonClick('Contenido 5', 'News & blog')}
+            isSelected={selectedButton === 'News & blog'}
+          />
+        </div>
           
       </div>
       {contentComponent}

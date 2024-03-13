@@ -10,7 +10,7 @@ function App() {
   const isTabletOrPhone = width <= 768;
 
   return (
-    <main className="mt-0">
+    <main className="mt-0 bg-black ">
 
       <Header />
       <div className="flex flex-col lg:flex-row ">
@@ -19,7 +19,7 @@ function App() {
             {isTabletOrPhone ? <PhoneContactInfoCard /> : <ContactInfoCard />}
         </div>
        
-        <div className="w-full lg:w-[59%] bg-green-400 m-0" >
+        <div className="w-full lg:w-[65%] ml-0 lg:ml-[-10%]  " >
           <ReactiveScreen />
         </div>
 
