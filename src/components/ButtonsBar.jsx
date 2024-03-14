@@ -39,7 +39,7 @@ const ButtonsBar = () => {
 
   return (
     <div>
-      <div className='inline-flex justify-center mb-[3%] ml-[8%]'>
+      <div className='inline-flex justify-center mb-[3%] ml-[12%]'>
 
         <div className="ml-[1%] ">
           <Button

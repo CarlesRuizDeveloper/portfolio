@@ -14,11 +14,11 @@ const PhoneContactInfoCard = () => {
         alt="Foto de Carles Ruiz Montejo"
         />
     </div>
-    <div className="flex flex-row w-[68%] sm:w-[45%] p-[1%] z-1 ml-[-10%] sm:ml-[-5%] text-center border-2 border-green-500 bg-white rounded-xl  shadow-md ">
+    <div className="flex flex-row w-[75%] sm:w-[45%] p-[1%] z-1 ml-[-10%] sm:ml-[-5%] text-center border-2 border-green-500 bg-white rounded-xl  shadow-md ">
         <div className="ml-[20%]">
-            <h1 class="font-bold text-[80%] sm:text-[90%]">Carles Ruiz Montejo</h1>
+            <h1 class="font-bold text-[85%] sm:text-[90%]">Carles Ruiz Montejo</h1>
             <h2 class="text-[75%]">Software developer</h2>  
-            <h2 class="text-[75%]">carlesruizm@gmail.com</h2>
+            <h2 class="text-[85%]">carlesruizm@gmail.com</h2>
         </div>
         <div className="ml-[15%]">
         <br></br>
